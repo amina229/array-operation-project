@@ -36,7 +36,7 @@ int main() {
                 printf("\n");
                 break;
 
-            case 3: {
+            case 3: 
                 int max = arr[0];
                 for(i = 1; i < n; i++) {
                     if(arr[i] > max)
@@ -44,9 +44,9 @@ int main() {
                 }
                 printf("Maximum: %d\n", max);
                 break;
-            }
+            
 
-            case 4: {
+            case 4: 
                 int min = arr[0];
                 for(i = 1; i < n; i++) {
                     if(arr[i] < min)
@@ -54,7 +54,7 @@ int main() {
                 }
                 printf("Minimum: %d\n", min);
                 break;
-            }
+            
 
             case 5:
                 printf("Enter element to search: ");
