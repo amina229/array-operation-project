@@ -73,7 +73,7 @@ int main() {
                 break;
 
             case 6:
-                printf("Enter position to update (0 to %d): ", n);
+                printf("Enter position to update (0 to %d): ", n-1);
                 scanf("%d", &pos);
 
                 printf("Enter new value: ");
