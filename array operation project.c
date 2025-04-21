@@ -23,6 +23,10 @@ int main() {
             case 1:
                 printf("Enter number of elements: ");
                 scanf("%d", &n);
+                if(n>Size || n<1){
+                    printf("Invalid number of elements\n",Size);
+                    break;
+                }
                 printf("Enter %d elements:\n", n);
                 for(i = 0; i < n; i++) {
                     scanf("%d", &arr[i]);
@@ -30,6 +34,10 @@ int main() {
                 break;
 
             case 2:
+                if(n==0){
+                    printf("Array is empty");
+                    break;
+                }
                 printf("Array elements:\n");
                 for(i = 0; i < n; i++) {
                     printf("%d ", arr[i]);
@@ -38,6 +46,10 @@ int main() {
                 break;
 
             case 3:
+                if(n==0){
+                    printf("Array is empty");
+                    break;
+                }
                 int max = arr[0];
                 for(i = 1; i < n; i++) {
                     if(arr[i] > max)
@@ -48,6 +60,10 @@ int main() {
 
 
             case 4:
+                if(n==0){
+                    printf("Array is empty");
+                    break;
+                }
                 int min = arr[0];
                 for(i = 1; i < n; i++) {
                     if(arr[i] < min)
@@ -58,6 +74,10 @@ int main() {
 
 
             case 5:
+                if(n==0){
+                    printf("Array is empty");
+                    break;
+                }
                 printf("Enter element to search: ");
                 scanf("%d", &value);
                 found=0;
@@ -74,6 +94,10 @@ int main() {
                 break;
 
             case 6:
+                if(n==0){
+                    printf("Array is empty");
+                    break;
+                }
                 printf("Enter position to update (0 to %d): ", n-1);
                 scanf("%d", &pos);
 
@@ -84,7 +108,10 @@ int main() {
                 break;
 
             case 7:
-
+                if(n==0){
+                    printf("Array is empty");
+                    break;
+                }
                 printf("Enter position to delete (0 to %d): ", n - 1);
                 scanf("%d", &pos);
 
