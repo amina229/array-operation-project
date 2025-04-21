@@ -12,8 +12,8 @@ int main() {
         printf("3. Find Maximum\n");
         printf("4. Find Minimum\n");
         printf("5. Search Element\n");
-        printf("6. Update Element at Position\n");
-        printf("7. Delete Element from Position\n");
+        printf("6. Update Element\n");
+        printf("7. Delete Element\n");
         printf("8. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
