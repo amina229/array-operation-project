@@ -1,5 +1,3 @@
-
-
 #include <stdio.h>
 
 #define Size 100
